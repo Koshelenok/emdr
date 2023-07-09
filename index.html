@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container" id="settings" style="display: none;">
+      <div class="card position-absolute w-25 top-50 start-50 translate-middle">
+        <div class="card-body">
+          <form action="#" id="startBallForm">
+            <label for="speedRange" class="form-label">Speed</label>
+            <input
+              type="range"
+              class="form-range"
+              min="100"
+              max="1000"
+              step="10"
+              name="speed"
+              id="speedRange"
+            />
+
+            <label for="durationRange" class="form-label">Duration</label>
+            <input
+              type="range"
+              min="30"
+              max="180"
+              step="30"
+              name="duration"
+              class="form-range"
+              id="durationRange"
+            />
+            <button type="sumbit" class="btn btn-primary">Start!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="ball" class="load"></div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
